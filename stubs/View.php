@@ -2,7 +2,7 @@
 /**
  * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.4
+ * Generated on Laravel 5.3.9
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
  * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
@@ -18,7 +18,7 @@
  * @method static void addLocation(string $location) Add a location to the array of view locations.
  * @see \Illuminate\View\Factory::addLocation
  *
- * @method static void addLoop(array|\Countable $data) Add new loop to the stack.
+ * @method static void addLoop(\Countable|array $data) Add new loop to the stack.
  * @see \Illuminate\View\Factory::addLoop
  *
  * @method static void addNamespace(string $namespace, string|array $hints) Add a new namespace to the loader.

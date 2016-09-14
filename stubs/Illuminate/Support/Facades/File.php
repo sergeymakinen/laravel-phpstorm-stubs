@@ -2,7 +2,7 @@
 /**
  * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.4
+ * Generated on Laravel 5.3.9
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
  * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
@@ -67,6 +67,9 @@ namespace Illuminate\Support\Facades;
  *
  * @method static bool isFile(string $file) Determine if the given path is a file.
  * @see \Illuminate\Filesystem\Filesystem::isFile
+ *
+ * @method static bool isReadable(string $path) Determine if the given path is readable.
+ * @see \Illuminate\Filesystem\Filesystem::isReadable
  *
  * @method static bool isWritable(string $path) Determine if the given path is writable.
  * @see \Illuminate\Filesystem\Filesystem::isWritable

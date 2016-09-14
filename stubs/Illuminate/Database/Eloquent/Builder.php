@@ -2,7 +2,7 @@
 /**
  * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.4
+ * Generated on Laravel 5.3.9
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
  * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
@@ -188,7 +188,7 @@ namespace Illuminate\Database\Eloquent;
  * @method \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder orHavingRaw(string $sql, array $bindings = []) Add a raw or having clause to the query.
  * @see \Illuminate\Database\Query\Builder::orHavingRaw
  *
- * @method \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder orWhere(string|\Closure $column, string $operator = null, mixed $value = null) Add an "or where" clause to the query.
+ * @method \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder orWhere(\Closure|string $column, string $operator = null, mixed $value = null) Add an "or where" clause to the query.
  * @see \Illuminate\Database\Query\Builder::orWhere
  *
  * @method \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder orWhereBetween(string $column, array $values) Add an or where between statement to the query.

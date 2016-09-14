@@ -2,7 +2,7 @@
 /**
  * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.4
+ * Generated on Laravel 5.3.9
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
  * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
@@ -89,7 +89,7 @@ namespace Illuminate\Support\Facades;
  * @method static mixed input(string $key, string $default = null) Get a route parameter for the current route.
  * @see \Illuminate\Routing\Router::input
  *
- * @method static bool is() Alias for the "currentRouteName" method.
+ * @method static bool is() Alias for the "currentRouteNamed" method.
  * @see \Illuminate\Routing\Router::is
  *
  * @method static \Illuminate\Routing\Route match(array|string $methods, string $uri, \Closure|array|string|null $action = null) Register a new route with the given verbs.

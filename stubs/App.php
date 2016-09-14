@@ -2,7 +2,7 @@
 /**
  * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.4
+ * Generated on Laravel 5.3.9
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
  * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
@@ -221,6 +221,9 @@
  *
  * @method static void resolving(string $abstract, \Closure|null $callback = null) Register a new resolving callback.
  * @see \Illuminate\Container\Container::resolving
+ *
+ * @method static string resourcePath() Get the path to the resources directory.
+ * @see \Illuminate\Foundation\Application::resourcePath
  *
  * @method static bool routesAreCached() Determine if the application routes are cached.
  * @see \Illuminate\Foundation\Application::routesAreCached

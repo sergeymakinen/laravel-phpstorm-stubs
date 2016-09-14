@@ -2,7 +2,7 @@
 /**
  * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.4
+ * Generated on Laravel 5.3.9
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
  * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
@@ -17,10 +17,10 @@ namespace Illuminate\Support\Facades;
  * @method static string action(string $action, mixed $parameters = [], bool $absolute = true) Get the URL to a controller action.
  * @see \Illuminate\Routing\UrlGenerator::action
  *
- * @method static string asset(string $path, bool|null $secure = null) Generate a URL to an application asset.
+ * @method static string asset(string $path, bool|null $secure = null) Generate the URL to an application asset.
  * @see \Illuminate\Routing\UrlGenerator::asset
  *
- * @method static string assetFrom(string $root, string $path, bool|null $secure = null) Generate a URL to an asset from a custom root domain such as CDN, etc.
+ * @method static string assetFrom(string $root, string $path, bool|null $secure = null) Generate the URL to an asset from a custom root domain such as CDN, etc.
  * @see \Illuminate\Routing\UrlGenerator::assetFrom
  *
  * @method static string current() Get the current URL for the request.
@@ -50,7 +50,7 @@ namespace Illuminate\Support\Facades;
  * @method static string secure(string $path, array $parameters = []) Generate a secure, absolute URL to the given path.
  * @see \Illuminate\Routing\UrlGenerator::secure
  *
- * @method static string secureAsset(string $path) Generate a URL to a secure asset.
+ * @method static string secureAsset(string $path) Generate the URL to a secure asset.
  * @see \Illuminate\Routing\UrlGenerator::secureAsset
  *
  * @method static void setRequest(\Illuminate\Http\Request $request) Set the current request instance.
