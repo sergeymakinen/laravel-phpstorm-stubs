@@ -1,8 +1,8 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs
+ * Laravel PhpStorm autocomplete stubs.
  *
- * Generated on Laravel 5.3.9
+ * Generated on Laravel 5.3.24.
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
  * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
@@ -32,7 +32,7 @@ namespace Illuminate\Support\Facades;
  * @method static \Illuminate\Database\Connection connection(string $name = null) Get a database connection instance.
  * @see \Illuminate\Database\DatabaseManager::connection
  *
- * @method static cursor($query, $bindings = [], $useReadPdo = true)
+ * @method static \Generator cursor(string $query, array $bindings = [], bool $useReadPdo = true) Run a select statement against the database and returns a generator.
  * @see \Illuminate\Database\Connection::cursor
  *
  * @method static int delete(string $query, array $bindings = []) Run a delete statement against the database.

@@ -1,8 +1,8 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs
+ * Laravel PhpStorm autocomplete stubs.
  *
- * Generated on Laravel 5.3.9
+ * Generated on Laravel 5.3.24.
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
  * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
@@ -20,7 +20,7 @@ namespace Illuminate\Support\Facades;
  * @method static array all() Returns attributes.
  * @see \Illuminate\Session\Store::all
  *
- * @method static clear() Clears all attributes.
+ * @method static void clear() Clears all attributes.
  * @see \Illuminate\Session\Store::clear
  *
  * @method static int decrement(string $key, int $amount = 1) Decrement the value of an item in the session.
@@ -110,7 +110,7 @@ namespace Illuminate\Support\Facades;
  * @method static bool migrate(bool $destroy = false, int $lifetime = null) Migrates the current session to a new session id while maintaining all.
  * @see \Illuminate\Session\Store::migrate
  *
- * @method static void now(string $key, mixed $value) Flash a key / value pair to the session.
+ * @method static void now(string $key, mixed $value) Flash a key / value pair to the session for immediate use.
  * @see \Illuminate\Session\Store::now
  *
  * @method static string|null previousUrl() Get the previous URL from the session.
@@ -134,19 +134,22 @@ namespace Illuminate\Support\Facades;
  * @method static void regenerateToken() Regenerate the CSRF token value.
  * @see \Illuminate\Session\Store::regenerateToken
  *
- * @method static registerBag(\Symfony\Component\HttpFoundation\Session\SessionBagInterface $bag) Registers a SessionBagInterface with the session.
+ * @method static void registerBag(\Symfony\Component\HttpFoundation\Session\SessionBagInterface $bag) Registers a SessionBagInterface with the session.
  * @see \Illuminate\Session\Store::registerBag
+ *
+ * @method static mixed remember(string $key, \Closure $callback) Get an item from the session, or store the default value.
+ * @see \Illuminate\Session\Store::remember
  *
  * @method static mixed remove(string $name) Removes an attribute.
  * @see \Illuminate\Session\Store::remove
  *
- * @method static replace(array $attributes) Sets attributes.
+ * @method static void replace(array $attributes) Sets attributes.
  * @see \Illuminate\Session\Store::replace
  *
- * @method static save() Force the session to be saved and closed.
+ * @method static void save() Force the session to be saved and closed.
  * @see \Illuminate\Session\Store::save
  *
- * @method static set(string $name, mixed $value) Sets an attribute.
+ * @method static void set(string $name, mixed $value) Sets an attribute.
  * @see \Illuminate\Session\Store::set
  *
  * @method static void setDefaultDriver(string $name) Set the default session driver name.
@@ -155,10 +158,10 @@ namespace Illuminate\Support\Facades;
  * @method static void setExists(bool $value) Set the existence of the session on the handler if applicable.
  * @see \Illuminate\Session\Store::setExists
  *
- * @method static setId(string $id) Sets the session ID.
+ * @method static void setId(string $id) Sets the session ID.
  * @see \Illuminate\Session\Store::setId
  *
- * @method static setName(string $name) Sets the session name.
+ * @method static void setName(string $name) Sets the session name.
  * @see \Illuminate\Session\Store::setName
  *
  * @method static void setPreviousUrl(string $url) Set the "previous" URL in the session.

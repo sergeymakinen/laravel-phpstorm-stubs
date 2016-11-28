@@ -1,8 +1,8 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs
+ * Laravel PhpStorm autocomplete stubs.
  *
- * Generated on Laravel 5.3.9
+ * Generated on Laravel 5.3.24.
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
  * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
@@ -218,7 +218,7 @@ namespace Illuminate\Support\Facades;
  * @method static string|array header(string $key = null, string|array|null $default = null) Retrieve a header from the request.
  * @see \Illuminate\Http\Request::header
  *
- * @method static initialize(array $query = [], array $request = [], array $attributes = [], array $cookies = [], array $files = [], array $server = [], string|resource $content = null) Sets the parameters for this request.
+ * @method static void initialize(array $query = [], array $request = [], array $attributes = [], array $cookies = [], array $files = [], array $server = [], string|resource $content = null) Sets the parameters for this request.
  * @see \Symfony\Component\HttpFoundation\Request::initialize
  *
  * @method static string|array input(string $key = null, string|array|null $default = null) Retrieve an input item from the request.
@@ -248,6 +248,9 @@ namespace Illuminate\Support\Facades;
  * @method static bool isMethod(string $method) Checks if the request method is of specified type.
  * @see \Symfony\Component\HttpFoundation\Request::isMethod
  *
+ * @method static bool isMethodCacheable() Checks whether the method is cacheable or not.
+ * @see \Symfony\Component\HttpFoundation\Request::isMethodCacheable
+ *
  * @method static bool isMethodSafe() Checks whether the method is safe or not.
  * @see \Symfony\Component\HttpFoundation\Request::isMethodSafe
  *
@@ -275,7 +278,7 @@ namespace Illuminate\Support\Facades;
  * @method static array only(array|mixed $keys) Get a subset containing the provided keys with values from the input data.
  * @see \Illuminate\Http\Request::only
  *
- * @method static overrideGlobals() Overrides the PHP global variables according to this request instance.
+ * @method static void overrideGlobals() Overrides the PHP global variables according to this request instance.
  * @see \Symfony\Component\HttpFoundation\Request::overrideGlobals
  *
  * @method static string path() Get the current path info for the request.
@@ -314,25 +317,25 @@ namespace Illuminate\Support\Facades;
  * @method static \Illuminate\Session\Store session() Get the session associated with the request.
  * @see \Illuminate\Http\Request::session
  *
- * @method static setDefaultLocale(string $locale) Sets the default locale.
+ * @method static void setDefaultLocale(string $locale) Sets the default locale.
  * @see \Symfony\Component\HttpFoundation\Request::setDefaultLocale
  *
- * @method static setFormat(string $format, string|array $mimeTypes) Associates a format with mime types.
+ * @method static void setFormat(string $format, string|array $mimeTypes) Associates a format with mime types.
  * @see \Symfony\Component\HttpFoundation\Request::setFormat
  *
- * @method static setLocale(string $locale) Sets the locale.
+ * @method static void setLocale(string $locale) Sets the locale.
  * @see \Symfony\Component\HttpFoundation\Request::setLocale
  *
- * @method static setMethod(string $method) Sets the request method.
+ * @method static void setMethod(string $method) Sets the request method.
  * @see \Symfony\Component\HttpFoundation\Request::setMethod
  *
- * @method static setRequestFormat(string $format) Sets the request format.
+ * @method static void setRequestFormat(string $format) Sets the request format.
  * @see \Symfony\Component\HttpFoundation\Request::setRequestFormat
  *
  * @method static \Illuminate\Http\Request setRouteResolver(\Closure $callback) Set the route resolver callback.
  * @see \Illuminate\Http\Request::setRouteResolver
  *
- * @method static setSession(\Symfony\Component\HttpFoundation\Session\SessionInterface $session) Sets the Session.
+ * @method static void setSession(\Symfony\Component\HttpFoundation\Session\SessionInterface $session) Sets the Session.
  * @see \Symfony\Component\HttpFoundation\Request::setSession
  *
  * @method static \Illuminate\Http\Request setUserResolver(\Closure $callback) Set the user resolver callback.

@@ -1,8 +1,8 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs
+ * Laravel PhpStorm autocomplete stubs.
  *
- * Generated on Laravel 5.3.9
+ * Generated on Laravel 5.3.24.
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
  * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
@@ -386,7 +386,7 @@ namespace Illuminate\Database\Eloquent;
  * @method static mixed value(string $column) Get a single column's value from the first result of a query.
  * @see \Illuminate\Database\Query\Builder::value
  *
- * @method static \Illuminate\Database\Query\Builder when(bool $value, \Closure $callback) Apply the callback's query changes if the given "value" is true.
+ * @method static \Illuminate\Database\Query\Builder when(bool $value, \Closure $callback, \Closure $default = null) Apply the callback's query changes if the given "value" is true.
  * @see \Illuminate\Database\Query\Builder::when
  *
  * @method static \Illuminate\Database\Query\Builder where(string|array|\Closure $column, string $operator = null, mixed $value = null, string $boolean = 'and') Add a basic where clause to the query.
@@ -410,7 +410,7 @@ namespace Illuminate\Database\Eloquent;
  * @method static \Illuminate\Database\Query\Builder whereExists(\Closure $callback, string $boolean = 'and', bool $not = false) Add an exists clause to the query.
  * @see \Illuminate\Database\Query\Builder::whereExists
  *
- * @method static \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Model whereHas(string $relation, \Closure $callback, string $operator = '>=', int $count = 1) Add a relationship count / exists condition to the query with where clauses.
+ * @method static \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Model whereHas(string $relation, \Closure|null $callback = null, string $operator = '>=', int $count = 1) Add a relationship count / exists condition to the query with where clauses.
  * @see \Illuminate\Database\Eloquent\Builder::whereHas
  *
  * @method static \Illuminate\Database\Query\Builder whereIn(string $column, mixed $values, string $boolean = 'and', bool $not = false) Add a "where in" clause to the query.

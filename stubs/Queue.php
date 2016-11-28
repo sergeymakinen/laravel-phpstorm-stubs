@@ -1,8 +1,8 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs
+ * Laravel PhpStorm autocomplete stubs.
  *
- * Generated on Laravel 5.3.9
+ * Generated on Laravel 5.3.24.
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
  * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)

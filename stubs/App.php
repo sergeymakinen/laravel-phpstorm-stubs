@@ -1,8 +1,8 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs
+ * Laravel PhpStorm autocomplete stubs.
  *
- * Generated on Laravel 5.3.9
+ * Generated on Laravel 5.3.24.
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
  * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
@@ -99,6 +99,9 @@
  * @method static void extend(string $abstract, \Closure $closure) "Extend" an abstract type in the container.
  * @see \Illuminate\Container\Container::extend
  *
+ * @method static \Closure factory(string $abstract, array $defaults = []) Get a closure to resolve the given type from the container.
+ * @see \Illuminate\Container\Container::factory
+ *
  * @method static void flush() Flush the container of all bindings and resolved instances.
  * @see \Illuminate\Foundation\Application::flush
  *
@@ -107,6 +110,9 @@
  *
  * @method static void forgetInstances() Clear all of the instances from the container.
  * @see \Illuminate\Container\Container::forgetInstances
+ *
+ * @method static string getAlias(string $abstract) Get the alias for an abstract if available.
+ * @see \Illuminate\Container\Container::getAlias
  *
  * @method static array getBindings() Get the container's bindings.
  * @see \Illuminate\Container\Container::getBindings

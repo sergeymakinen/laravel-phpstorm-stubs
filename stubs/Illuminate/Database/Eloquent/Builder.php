@@ -1,8 +1,8 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs
+ * Laravel PhpStorm autocomplete stubs.
  *
- * Generated on Laravel 5.3.9
+ * Generated on Laravel 5.3.24.
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
  * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
@@ -299,7 +299,7 @@ namespace Illuminate\Database\Eloquent;
  * @method mixed value(string $column) Get a single column's value from the first result of a query.
  * @see \Illuminate\Database\Query\Builder::value
  *
- * @method \Illuminate\Database\Query\Builder when(bool $value, \Closure $callback) Apply the callback's query changes if the given "value" is true.
+ * @method \Illuminate\Database\Query\Builder when(bool $value, \Closure $callback, \Closure $default = null) Apply the callback's query changes if the given "value" is true.
  * @see \Illuminate\Database\Query\Builder::when
  *
  * @method \Illuminate\Database\Query\Builder where(string|array|\Closure $column, string $operator = null, mixed $value = null, string $boolean = 'and') Add a basic where clause to the query.

@@ -1,8 +1,8 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs
+ * Laravel PhpStorm autocomplete stubs.
  *
- * Generated on Laravel 5.3.9
+ * Generated on Laravel 5.3.24.
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
  * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
@@ -13,6 +13,9 @@ namespace Illuminate\Support\Facades;
 
 /**
  * Illuminate\Support\Facades\Lang stub.
+ *
+ * @method static void addLines(array $lines, string $locale, string $namespace = '*') Add translation lines to the given locale.
+ * @see \Illuminate\Translation\Translator::addLines
  *
  * @method static void addNamespace(string $namespace, string $hint) Add a new namespace to the loader.
  * @see \Illuminate\Translation\Translator::addNamespace
