@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -20,7 +20,7 @@ namespace Illuminate\Support\Facades;
  * @method static \Illuminate\Http\RedirectResponse away(string $path, int $status = 302, array $headers = []) Create a new redirect response to an external URL (no validation).
  * @see \Illuminate\Routing\Redirector::away
  *
- * @method static \Illuminate\Http\RedirectResponse back(int $status = 302, array $headers = [], string $fallback = false) Create a new redirect response to the previous location.
+ * @method static \Illuminate\Http\RedirectResponse back(int $status = 302, array $headers = [], mixed $fallback = false) Create a new redirect response to the previous location.
  * @see \Illuminate\Routing\Redirector::back
  *
  * @method static \Illuminate\Routing\UrlGenerator getUrlGenerator() Get the URL generator instance.

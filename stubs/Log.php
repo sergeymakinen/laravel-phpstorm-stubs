@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -57,7 +57,7 @@
  * @method static void useFiles(string $path, string $level = 'debug') Register a file log handler.
  * @see \Illuminate\Log\Writer::useFiles
  *
- * @method static \Psr\Log\LoggerInterface useSyslog(string $name = 'laravel', string $level = 'debug') Register a Syslog handler.
+ * @method static \Psr\Log\LoggerInterface useSyslog(string $name = 'laravel', string $level = 'debug', mixed $facility = Illuminate\Log\LOG_USER) Register a Syslog handler.
  * @see \Illuminate\Log\Writer::useSyslog
  *
  * @method static void warning(string $message, array $context = []) Log a warning message to the logs.

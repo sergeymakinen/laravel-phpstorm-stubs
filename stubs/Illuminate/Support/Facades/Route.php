@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -13,6 +13,9 @@ namespace Illuminate\Support\Facades;
 
 /**
  * Illuminate\Support\Facades\Route stub.
+ *
+ * @method static \Illuminate\Routing\Router aliasMiddleware(string $name, string $class) Register a short-hand name for a middleware.
+ * @see \Illuminate\Routing\Router::aliasMiddleware
  *
  * @method static \Illuminate\Routing\Route any(string $uri, \Closure|array|string|null $action = null) Register a new route responding to all verbs.
  * @see \Illuminate\Routing\Router::any
@@ -22,9 +25,6 @@ namespace Illuminate\Support\Facades;
  *
  * @method static void bind(string $key, string|callable $binder) Add a new route parameter binder.
  * @see \Illuminate\Routing\Router::bind
- *
- * @method static \Closure createClassBinding(string $binding) Create a class based binding using the IoC container.
- * @see \Illuminate\Routing\Router::createClassBinding
  *
  * @method static \Illuminate\Routing\Route current() Get the currently dispatched route instance.
  * @see \Illuminate\Routing\Router::current
@@ -50,11 +50,14 @@ namespace Illuminate\Support\Facades;
  * @method static mixed dispatchToRoute(\Illuminate\Http\Request $request) Dispatch the request to a route and return the response.
  * @see \Illuminate\Routing\Router::dispatchToRoute
  *
- * @method static array gatherRouteMiddleware(\Illuminate\Routing\Route $route) Gather the middleware for the given route.
+ * @method static array gatherRouteMiddleware(\Illuminate\Routing\Route $route) Gather the middleware for the given route with resolved class names.
  * @see \Illuminate\Routing\Router::gatherRouteMiddleware
  *
  * @method static \Illuminate\Routing\Route get(string $uri, \Closure|array|string|null $action = null) Register a new GET route with the router.
  * @see \Illuminate\Routing\Router::get
+ *
+ * @method static \Closure|null getBindingCallback(string $key) Get the binding callback for a given binding.
+ * @see \Illuminate\Routing\Router::getBindingCallback
  *
  * @method static \Illuminate\Http\Request getCurrentRequest() Get the request currently being dispatched.
  * @see \Illuminate\Routing\Router::getCurrentRequest
@@ -71,13 +74,16 @@ namespace Illuminate\Support\Facades;
  * @method static array getMiddleware() Get all of the defined middleware short-hand names.
  * @see \Illuminate\Routing\Router::getMiddleware
  *
+ * @method static array getMiddlewareGroups() Get all of the defined middleware groups.
+ * @see \Illuminate\Routing\Router::getMiddlewareGroups
+ *
  * @method static array getPatterns() Get the global "where" patterns.
  * @see \Illuminate\Routing\Router::getPatterns
  *
  * @method static \Illuminate\Routing\RouteCollection getRoutes() Get the underlying route collection.
  * @see \Illuminate\Routing\Router::getRoutes
  *
- * @method static void group(array $attributes, \Closure $callback) Create a route group with shared attributes.
+ * @method static void group(array $attributes, \Closure|string $routes) Create a route group with shared attributes.
  * @see \Illuminate\Routing\Router::group
  *
  * @method static bool has(string $name) Check if a route with the given name exists.
@@ -86,11 +92,17 @@ namespace Illuminate\Support\Facades;
  * @method static bool hasGroupStack() Determine if the router currently has a group stack.
  * @see \Illuminate\Routing\Router::hasGroupStack
  *
+ * @method static bool hasMiddlewareGroup(string $name) Check if a middlewareGroup with the given name exists.
+ * @see \Illuminate\Routing\Router::hasMiddlewareGroup
+ *
  * @method static mixed input(string $key, string $default = null) Get a route parameter for the current route.
  * @see \Illuminate\Routing\Router::input
  *
  * @method static bool is() Alias for the "currentRouteNamed" method.
  * @see \Illuminate\Routing\Router::is
+ *
+ * @method static mixed macroCall(string $method, array $parameters) Dynamically handle calls to the class.
+ * @see \Illuminate\Routing\Router::macroCall
  *
  * @method static \Illuminate\Routing\Route match(array|string $methods, string $uri, \Closure|array|string|null $action = null) Register a new route with the given verbs.
  * @see \Illuminate\Routing\Router::match
@@ -100,9 +112,6 @@ namespace Illuminate\Support\Facades;
  *
  * @method static array mergeWithLastGroup(array $new) Merge the given array with the last group stack.
  * @see \Illuminate\Routing\Router::mergeWithLastGroup
- *
- * @method static \Illuminate\Routing\Router middleware(string $name, string $class) Register a short-hand name for a middleware.
- * @see \Illuminate\Routing\Router::middleware
  *
  * @method static \Illuminate\Routing\Router middlewareGroup(string $name, array $middleware) Register a group of middleware.
  * @see \Illuminate\Routing\Router::middlewareGroup
@@ -137,14 +146,14 @@ namespace Illuminate\Support\Facades;
  * @method static \Illuminate\Routing\Route put(string $uri, \Closure|array|string|null $action = null) Register a new PUT route with the router.
  * @see \Illuminate\Routing\Router::put
  *
- * @method static string|array resolveMiddlewareClassName(string $name) Resolve the middleware name to a class name(s) preserving passed parameters.
- * @see \Illuminate\Routing\Router::resolveMiddlewareClassName
- *
  * @method static void resource(string $name, string $controller, array $options = []) Route a resource to a controller.
  * @see \Illuminate\Routing\Router::resource
  *
  * @method static void resourceParameters(array $parameters = []) Set the global resource parameter mapping.
  * @see \Illuminate\Routing\Router::resourceParameters
+ *
+ * @method static array|null resourceVerbs(array $verbs = []) Get or set the verbs used in the resource URIs.
+ * @see \Illuminate\Routing\Router::resourceVerbs
  *
  * @method static void resources(array $resources) Register an array of resource controllers.
  * @see \Illuminate\Routing\Router::resources

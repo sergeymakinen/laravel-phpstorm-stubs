@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -75,7 +75,7 @@
  * @method static mixed sear(string $key, \Closure $callback) Get an item from the cache, or store the default value forever.
  * @see \Illuminate\Cache\Repository::sear
  *
- * @method static void setDefaultCacheTime(float|int $minutes) Set the default cache time in minutes.
+ * @method static \Illuminate\Cache\Repository setDefaultCacheTime(float|int $minutes) Set the default cache time in minutes.
  * @see \Illuminate\Cache\Repository::setDefaultCacheTime
  *
  * @method static void setDefaultDriver(string $name) Set the default cache driver name.

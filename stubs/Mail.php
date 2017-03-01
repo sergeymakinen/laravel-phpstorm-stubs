@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -15,10 +15,13 @@
  * @method static void alwaysFrom(string $address, string|null $name = null) Set the global from address and name.
  * @see \Illuminate\Mail\Mailer::alwaysFrom
  *
+ * @method static void alwaysReplyTo(string $address, string|null $name = null) Set the global reply-to address and name.
+ * @see \Illuminate\Mail\Mailer::alwaysReplyTo
+ *
  * @method static void alwaysTo(string $address, string|null $name = null) Set the global to address and name.
  * @see \Illuminate\Mail\Mailer::alwaysTo
  *
- * @method static \Illuminate\Mail\MailableMailer bcc(mixed $users) Begin the process of mailing a mailable class instance.
+ * @method static \Illuminate\Mail\PendingMail bcc(mixed $users) Begin the process of mailing a mailable class instance.
  * @see \Illuminate\Mail\Mailer::bcc
  *
  * @method static array failures() Get the array of failed recipients.
@@ -54,16 +57,13 @@
  * @method static void send(string|array $view, array $data = [], \Closure|string $callback = null) Send a new message using a view.
  * @see \Illuminate\Mail\Mailer::send
  *
- * @method static void setContainer(\Illuminate\Contracts\Container\Container $container) Set the IoC container instance.
- * @see \Illuminate\Mail\Mailer::setContainer
- *
- * @method static \Illuminate\Mail\Mailer setQueue(\Illuminate\Contracts\Queue\Queue $queue) Set the queue manager instance.
+ * @method static \Illuminate\Mail\Mailer setQueue(\Illuminate\Contracts\Queue\Factory $queue) Set the queue manager instance.
  * @see \Illuminate\Mail\Mailer::setQueue
  *
  * @method static void setSwiftMailer(\Swift_Mailer $swift) Set the Swift Mailer instance.
  * @see \Illuminate\Mail\Mailer::setSwiftMailer
  *
- * @method static \Illuminate\Mail\MailableMailer to(mixed $users) Begin the process of mailing a mailable class instance.
+ * @method static \Illuminate\Mail\PendingMail to(mixed $users) Begin the process of mailing a mailable class instance.
  * @see \Illuminate\Mail\Mailer::to
  *
  */

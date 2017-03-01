@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -41,6 +41,9 @@ namespace Illuminate\Support\Facades;
  * @method static void failing(mixed $callback) Register an event listener for the failed job event.
  * @see \Illuminate\Queue\QueueManager::failing
  *
+ * @method static string getConnectionName() Get the connection name for the queue.
+ * @see \Illuminate\Queue\Queue::getConnectionName
+ *
  * @method static string getDefaultDriver() Get the name of the default queue connection.
  * @see \Illuminate\Queue\QueueManager::getDefaultDriver
  *
@@ -58,6 +61,9 @@ namespace Illuminate\Support\Facades;
  *
  * @method static mixed pushOn(string $queue, string $job, mixed $data = '') Push a new job onto the queue.
  * @see \Illuminate\Queue\Queue::pushOn
+ *
+ * @method static \Illuminate\Queue\Queue setConnectionName(string $name) Set the connection name for the queue.
+ * @see \Illuminate\Queue\Queue::setConnectionName
  *
  * @method static void setContainer(\Illuminate\Container\Container $container) Set the IoC container instance.
  * @see \Illuminate\Queue\Queue::setContainer

@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -23,7 +23,7 @@ namespace Illuminate\Support\Facades;
  * @method static \Illuminate\Validation\PresenceVerifierInterface getPresenceVerifier() Get the Presence Verifier implementation.
  * @see \Illuminate\Validation\Factory::getPresenceVerifier
  *
- * @method static \Symfony\Component\Translation\TranslatorInterface getTranslator() Get the Translator implementation.
+ * @method static \Illuminate\Contracts\Translation\Translator getTranslator() Get the Translator implementation.
  * @see \Illuminate\Validation\Factory::getTranslator
  *
  * @method static \Illuminate\Validation\Validator make(array $data, array $rules, array $messages = [], array $customAttributes = []) Create a new Validator instance.

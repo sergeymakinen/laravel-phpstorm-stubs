@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -40,6 +40,12 @@ namespace Illuminate\Database\Eloquent;
  *
  * @method bool chunkById(int $count, callable $callback, string $column = 'id', string $alias = null) Chunk the results of a query by comparing numeric IDs.
  * @see \Illuminate\Database\Query\Builder::chunkById
+ *
+ * @method \Illuminate\Database\Eloquent\Builder cloneWithout(array $except) Clone the query without the given properties.
+ * @see \Illuminate\Database\Query\Builder::cloneWithout
+ *
+ * @method \Illuminate\Database\Eloquent\Builder cloneWithoutBindings(array $except) Clone the query without the given bindings.
+ * @see \Illuminate\Database\Query\Builder::cloneWithoutBindings
  *
  * @method int count(string $columns = '*') Retrieve the "count" result of the query.
  * @see \Illuminate\Database\Query\Builder::count
@@ -131,10 +137,10 @@ namespace Illuminate\Database\Eloquent;
  * @method int insertGetId(array $values, string $sequence = null) Insert a new record and get the value of the primary key.
  * @see \Illuminate\Database\Query\Builder::insertGetId
  *
- * @method \Illuminate\Database\Query\Builder join(string $table, string $one, string $operator = null, string $two = null, string $type = 'inner', bool $where = false) Add a join clause to the query.
+ * @method \Illuminate\Database\Query\Builder join(string $table, string $first, string $operator = null, string $second = null, string $type = 'inner', bool $where = false) Add a join clause to the query.
  * @see \Illuminate\Database\Query\Builder::join
  *
- * @method \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder joinWhere(string $table, string $one, string $operator, string $two, string $type = 'inner') Add a "join where" clause to the query.
+ * @method \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder joinWhere(string $table, string $first, string $operator, string $second, string $type = 'inner') Add a "join where" clause to the query.
  * @see \Illuminate\Database\Query\Builder::joinWhere
  *
  * @method \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder latest(string $column = 'created_at') Add an "order by" clause for a timestamp to the query.
@@ -143,13 +149,13 @@ namespace Illuminate\Database\Eloquent;
  * @method \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder leftJoin(string $table, string $first, string $operator = null, string $second = null) Add a left join to the query.
  * @see \Illuminate\Database\Query\Builder::leftJoin
  *
- * @method \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder leftJoinWhere(string $table, string $one, string $operator, string $two) Add a "join where" clause to the query.
+ * @method \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder leftJoinWhere(string $table, string $first, string $operator, string $second) Add a "join where" clause to the query.
  * @see \Illuminate\Database\Query\Builder::leftJoinWhere
  *
  * @method \Illuminate\Database\Query\Builder limit(int $value) Set the "limit" value of the query.
  * @see \Illuminate\Database\Query\Builder::limit
  *
- * @method \Illuminate\Database\Query\Builder lock(bool $value = true) Lock the selected rows in the table.
+ * @method \Illuminate\Database\Query\Builder lock(string|bool $value = true) Lock the selected rows in the table.
  * @see \Illuminate\Database\Query\Builder::lock
  *
  * @method \Illuminate\Database\Query\Builder lockForUpdate() Lock the selected rows in the table for updating.
@@ -245,7 +251,7 @@ namespace Illuminate\Database\Eloquent;
  * @method \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder rightJoin(string $table, string $first, string $operator = null, string $second = null) Add a right join to the query.
  * @see \Illuminate\Database\Query\Builder::rightJoin
  *
- * @method \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder rightJoinWhere(string $table, string $one, string $operator, string $two) Add a "right join where" clause to the query.
+ * @method \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder rightJoinWhere(string $table, string $first, string $operator, string $second) Add a "right join where" clause to the query.
  * @see \Illuminate\Database\Query\Builder::rightJoinWhere
  *
  * @method \Illuminate\Database\Query\Builder select(array|mixed $columns = ['*']) Set the columns to be selected.

@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -23,11 +23,8 @@ namespace Illuminate\Support\Facades;
  * @method static void addLoop(\Countable|array $data) Add new loop to the stack.
  * @see \Illuminate\View\Factory::addLoop
  *
- * @method static void addNamespace(string $namespace, string|array $hints) Add a new namespace to the loader.
+ * @method static \Illuminate\View\Factory addNamespace(string $namespace, string|array $hints) Add a new namespace to the loader.
  * @see \Illuminate\View\Factory::addNamespace
- *
- * @method static void alias(string $view, string $alias) Add an alias for a view.
- * @see \Illuminate\View\Factory::alias
  *
  * @method static string appendSection() Stop injecting content into a section and append it.
  * @see \Illuminate\View\Factory::appendSection
@@ -38,7 +35,7 @@ namespace Illuminate\Support\Facades;
  * @method static void callCreator(\Illuminate\Contracts\View\View $view) Call the creator for a given view.
  * @see \Illuminate\View\Factory::callCreator
  *
- * @method static array composer(array|string $views, \Closure|string $callback, int|null $priority = null) Register a view composer event.
+ * @method static array composer(array|string $views, \Closure|string $callback) Register a view composer event.
  * @see \Illuminate\View\Factory::composer
  *
  * @method static array composers(array $composers) Register multiple view composers via an array.
@@ -53,17 +50,29 @@ namespace Illuminate\Support\Facades;
  * @method static bool doneRendering() Check if there are no active render operations.
  * @see \Illuminate\View\Factory::doneRendering
  *
+ * @method static void endSlot() Save the slot content for rendering.
+ * @see \Illuminate\View\Factory::endSlot
+ *
  * @method static bool exists(string $view) Determine if a given view exists.
  * @see \Illuminate\View\Factory::exists
  *
  * @method static \Illuminate\Contracts\View\View file(string $path, array $data = [], array $mergeData = []) Get the evaluated view contents for the given view.
  * @see \Illuminate\View\Factory::file
  *
- * @method static void flushSections() Flush all of the section contents.
+ * @method static void flushFinderCache() Flush the cache of views located by the finder.
+ * @see \Illuminate\View\Factory::flushFinderCache
+ *
+ * @method static void flushSections() Flush all of the sections.
  * @see \Illuminate\View\Factory::flushSections
  *
- * @method static void flushSectionsIfDoneRendering() Flush all of the section contents if done rendering.
- * @see \Illuminate\View\Factory::flushSectionsIfDoneRendering
+ * @method static void flushStacks() Flush all of the stacks.
+ * @see \Illuminate\View\Factory::flushStacks
+ *
+ * @method static void flushState() Flush all of the factory state like sections and stacks.
+ * @see \Illuminate\View\Factory::flushState
+ *
+ * @method static void flushStateIfDoneRendering() Flush all of the section contents if done rendering.
+ * @see \Illuminate\View\Factory::flushStateIfDoneRendering
  *
  * @method static \Illuminate\Contracts\Container\Container getContainer() Get the IoC container instance.
  * @see \Illuminate\View\Factory::getContainer
@@ -83,14 +92,11 @@ namespace Illuminate\Support\Facades;
  * @method static \Illuminate\View\ViewFinderInterface getFinder() Get the view finder instance.
  * @see \Illuminate\View\Factory::getFinder
  *
- * @method static array getFirstLoop() Get an instance of the first loop in the stack.
- * @see \Illuminate\View\Factory::getFirstLoop
+ * @method static \StdClass|null getLastLoop() Get an instance of the last loop in the stack.
+ * @see \Illuminate\View\Factory::getLastLoop
  *
  * @method static array getLoopStack() Get the entire loop stack.
  * @see \Illuminate\View\Factory::getLoopStack
- *
- * @method static array getNames() Get all of the registered named views in environment.
- * @see \Illuminate\View\Factory::getNames
  *
  * @method static array getSections() Get the entire array of sections.
  * @see \Illuminate\View\Factory::getSections
@@ -113,20 +119,23 @@ namespace Illuminate\Support\Facades;
  * @method static \Illuminate\Contracts\View\View make(string $view, array $data = [], array $mergeData = []) Get the evaluated view contents for the given view.
  * @see \Illuminate\View\Factory::make
  *
- * @method static void name(string $view, string $name) Register a named view.
- * @see \Illuminate\View\Factory::name
- *
- * @method static \Illuminate\Contracts\View\View of(string $view, mixed $data = []) Get the evaluated view contents for a named view.
- * @see \Illuminate\View\Factory::of
- *
  * @method static void popLoop() Pop a loop from the top of the loop stack.
  * @see \Illuminate\View\Factory::popLoop
  *
- * @method static void prependNamespace(string $namespace, string|array $hints) Prepend a new namespace to the loader.
+ * @method static \Illuminate\View\Factory prependNamespace(string $namespace, string|array $hints) Prepend a new namespace to the loader.
  * @see \Illuminate\View\Factory::prependNamespace
+ *
+ * @method static string renderComponent() Render the current component.
+ * @see \Illuminate\View\Factory::renderComponent
  *
  * @method static string renderEach(string $view, array $data, string $iterator, string $empty = 'raw|') Get the rendered contents of a partial from a loop.
  * @see \Illuminate\View\Factory::renderEach
+ *
+ * @method static string renderTranslation() Render the current translation.
+ * @see \Illuminate\View\Factory::renderTranslation
+ *
+ * @method static \Illuminate\View\Factory replaceNamespace(string $namespace, string|array $hints) Replace the namespace hints for the given namespace.
+ * @see \Illuminate\View\Factory::replaceNamespace
  *
  * @method static void setContainer(\Illuminate\Contracts\Container\Container $container) Set the IoC container instance.
  * @see \Illuminate\View\Factory::setContainer
@@ -143,11 +152,26 @@ namespace Illuminate\Support\Facades;
  * @method static mixed shared(string $key, mixed $default = null) Get an item from the shared data.
  * @see \Illuminate\View\Factory::shared
  *
+ * @method static void slot(string $name, string|null $content = null) Start the slot rendering process.
+ * @see \Illuminate\View\Factory::slot
+ *
+ * @method static void startComponent(string $name, array $data = []) Start a component rendering process.
+ * @see \Illuminate\View\Factory::startComponent
+ *
+ * @method static void startPrepend(string $section, string $content = '') Start prepending content into a push section.
+ * @see \Illuminate\View\Factory::startPrepend
+ *
  * @method static void startPush(string $section, string $content = '') Start injecting content into a push section.
  * @see \Illuminate\View\Factory::startPush
  *
- * @method static void startSection(string $section, string $content = '') Start injecting content into a section.
+ * @method static void startSection(string $section, string|null $content = null) Start injecting content into a section.
  * @see \Illuminate\View\Factory::startSection
+ *
+ * @method static void startTranslation(array $replacements = []) Start a translation block.
+ * @see \Illuminate\View\Factory::startTranslation
+ *
+ * @method static string stopPrepend() Stop prepending content into a push section.
+ * @see \Illuminate\View\Factory::stopPrepend
  *
  * @method static string stopPush() Stop injecting content into a push section.
  * @see \Illuminate\View\Factory::stopPush

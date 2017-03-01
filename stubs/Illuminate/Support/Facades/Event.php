@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -14,14 +14,14 @@ namespace Illuminate\Support\Facades;
 /**
  * Illuminate\Support\Facades\Event stub.
  *
- * @method static \Closure createClassListener(mixed $listener) Create a class based listener using the IoC container.
+ * @method static \Closure createClassListener(string $listener, bool $wildcard = false) Create a class based listener using the IoC container.
  * @see \Illuminate\Events\Dispatcher::createClassListener
+ *
+ * @method static array|null dispatch(string|object $event, mixed $payload = [], bool $halt = false) Fire an event and call the listeners.
+ * @see \Illuminate\Events\Dispatcher::dispatch
  *
  * @method static array|null fire(string|object $event, mixed $payload = [], bool $halt = false) Fire an event and call the listeners.
  * @see \Illuminate\Events\Dispatcher::fire
- *
- * @method static string firing() Get the event that is currently firing.
- * @see \Illuminate\Events\Dispatcher::firing
  *
  * @method static void flush(string $event) Flush a set of pushed events.
  * @see \Illuminate\Events\Dispatcher::flush
@@ -38,10 +38,10 @@ namespace Illuminate\Support\Facades;
  * @method static bool hasListeners(string $eventName) Determine if a given event has listeners.
  * @see \Illuminate\Events\Dispatcher::hasListeners
  *
- * @method static void listen(string|array $events, mixed $listener, int $priority = 0) Register an event listener with the dispatcher.
+ * @method static void listen(string|array $events, mixed $listener) Register an event listener with the dispatcher.
  * @see \Illuminate\Events\Dispatcher::listen
  *
- * @method static mixed makeListener(mixed $listener) Register an event listener with the dispatcher.
+ * @method static mixed makeListener(string|\Closure $listener, bool $wildcard = false) Register an event listener with the dispatcher.
  * @see \Illuminate\Events\Dispatcher::makeListener
  *
  * @method static void push(string $event, array $payload = []) Register an event and payload to be fired later.
@@ -53,7 +53,7 @@ namespace Illuminate\Support\Facades;
  * @method static void subscribe(object|string $subscriber) Register an event subscriber with the dispatcher.
  * @see \Illuminate\Events\Dispatcher::subscribe
  *
- * @method static mixed until(string|object $event, array $payload = []) Fire an event until the first non-null response is returned.
+ * @method static array|null until(string|object $event, mixed $payload = []) Fire an event until the first non-null response is returned.
  * @see \Illuminate\Events\Dispatcher::until
  *
  */

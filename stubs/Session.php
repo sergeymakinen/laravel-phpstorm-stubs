@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -15,11 +15,8 @@
  * @method static void ageFlashData() Age the flash data for the session.
  * @see \Illuminate\Session\Store::ageFlashData
  *
- * @method static array all() Returns attributes.
+ * @method static array all() Get all of the session data.
  * @see \Illuminate\Session\Store::all
- *
- * @method static void clear() Clears all attributes.
- * @see \Illuminate\Session\Store::clear
  *
  * @method static int decrement(string $key, int $amount = 1) Decrement the value of an item in the session.
  * @see \Illuminate\Session\Store::decrement
@@ -27,7 +24,7 @@
  * @method static mixed driver(string $driver = null) Get a driver instance.
  * @see \Illuminate\Support\Manager::driver
  *
- * @method static bool exists(string|array $key) Checks if an attribute exists.
+ * @method static bool exists(string|array $key) Checks if a key exists.
  * @see \Illuminate\Session\Store::exists
  *
  * @method static \Illuminate\Support\Manager extend(string $driver, \Closure $callback) Register a custom driver creator Closure.
@@ -45,14 +42,8 @@
  * @method static void forget(string|array $keys) Remove one or many items from the session.
  * @see \Illuminate\Session\Store::forget
  *
- * @method static mixed get(string $name, mixed $default = null) Returns an attribute.
+ * @method static mixed get(string $key, mixed $default = null) Get an item from the session.
  * @see \Illuminate\Session\Store::get
- *
- * @method static \Symfony\Component\HttpFoundation\Session\SessionBagInterface getBag(string $name) Gets a bag instance by name.
- * @see \Illuminate\Session\Store::getBag
- *
- * @method static array getBagData(string $name) Get the raw bag data array for a given bag.
- * @see \Illuminate\Session\Store::getBagData
  *
  * @method static string getDefaultDriver() Get the default session driver name.
  * @see \Illuminate\Session\SessionManager::getDefaultDriver
@@ -63,13 +54,10 @@
  * @method static \SessionHandlerInterface getHandler() Get the underlying session handler implementation.
  * @see \Illuminate\Session\Store::getHandler
  *
- * @method static string getId() Returns the session ID.
+ * @method static string getId() Get the current session ID.
  * @see \Illuminate\Session\Store::getId
  *
- * @method static \Symfony\Component\HttpFoundation\Session\Storage\MetadataBag getMetadataBag() Gets session meta.
- * @see \Illuminate\Session\Store::getMetadataBag
- *
- * @method static mixed getName() Returns the session name.
+ * @method static string getName() Get the name of the session.
  * @see \Illuminate\Session\Store::getName
  *
  * @method static mixed getOldInput(string $key = null, mixed $default = null) Get the requested item from the flashed input array.
@@ -78,13 +66,10 @@
  * @method static array getSessionConfig() Get the session configuration.
  * @see \Illuminate\Session\SessionManager::getSessionConfig
  *
- * @method static string getToken() Get the CSRF token value.
- * @see \Illuminate\Session\Store::getToken
- *
  * @method static bool handlerNeedsRequest() Determine if the session handler needs a request.
  * @see \Illuminate\Session\Store::handlerNeedsRequest
  *
- * @method static bool has(string $name) Checks if an attribute is defined.
+ * @method static bool has(string|array $key) Checks if an a key is present and not null.
  * @see \Illuminate\Session\Store::has
  *
  * @method static bool hasOldInput(string $key = null) Determine if the session contains old input.
@@ -93,10 +78,10 @@
  * @method static mixed increment(string $key, int $amount = 1) Increment the value of an item in the session.
  * @see \Illuminate\Session\Store::increment
  *
- * @method static bool invalidate(int $lifetime = null) Invalidates the current session.
+ * @method static bool invalidate() Flush the session data and regenerate the ID.
  * @see \Illuminate\Session\Store::invalidate
  *
- * @method static bool isStarted() Checks if the session was started.
+ * @method static bool isStarted() Determine if the session has been started.
  * @see \Illuminate\Session\Store::isStarted
  *
  * @method static bool isValidId(string $id) Determine if this is a valid session ID.
@@ -105,7 +90,7 @@
  * @method static void keep(array|mixed $keys = null) Reflash a subset of the current flash data.
  * @see \Illuminate\Session\Store::keep
  *
- * @method static bool migrate(bool $destroy = false, int $lifetime = null) Migrates the current session to a new session id while maintaining all.
+ * @method static bool migrate(bool $destroy = false) Generate a new session ID for the session.
  * @see \Illuminate\Session\Store::migrate
  *
  * @method static void now(string $key, mixed $value) Flash a key / value pair to the session for immediate use.
@@ -132,23 +117,17 @@
  * @method static void regenerateToken() Regenerate the CSRF token value.
  * @see \Illuminate\Session\Store::regenerateToken
  *
- * @method static void registerBag(\Symfony\Component\HttpFoundation\Session\SessionBagInterface $bag) Registers a SessionBagInterface with the session.
- * @see \Illuminate\Session\Store::registerBag
- *
  * @method static mixed remember(string $key, \Closure $callback) Get an item from the session, or store the default value.
  * @see \Illuminate\Session\Store::remember
  *
- * @method static mixed remove(string $name) Removes an attribute.
+ * @method static mixed remove(string $key) Remove an item from the session, returning its value.
  * @see \Illuminate\Session\Store::remove
  *
- * @method static void replace(array $attributes) Sets attributes.
+ * @method static void replace(array $attributes) Replace the given session attributes entirely.
  * @see \Illuminate\Session\Store::replace
  *
- * @method static void save() Force the session to be saved and closed.
+ * @method static bool save() Save the session data to storage.
  * @see \Illuminate\Session\Store::save
- *
- * @method static void set(string $name, mixed $value) Sets an attribute.
- * @see \Illuminate\Session\Store::set
  *
  * @method static void setDefaultDriver(string $name) Set the default session driver name.
  * @see \Illuminate\Session\SessionManager::setDefaultDriver
@@ -156,19 +135,19 @@
  * @method static void setExists(bool $value) Set the existence of the session on the handler if applicable.
  * @see \Illuminate\Session\Store::setExists
  *
- * @method static void setId(string $id) Sets the session ID.
+ * @method static void setId(string $id) Set the session ID.
  * @see \Illuminate\Session\Store::setId
  *
- * @method static void setName(string $name) Sets the session name.
+ * @method static void setName(string $name) Set the name of the session.
  * @see \Illuminate\Session\Store::setName
  *
  * @method static void setPreviousUrl(string $url) Set the "previous" URL in the session.
  * @see \Illuminate\Session\Store::setPreviousUrl
  *
- * @method static void setRequestOnHandler(\Symfony\Component\HttpFoundation\Request $request) Set the request on the handler instance.
+ * @method static void setRequestOnHandler(\Illuminate\Http\Request $request) Set the request on the handler instance.
  * @see \Illuminate\Session\Store::setRequestOnHandler
  *
- * @method static bool start() Starts the session storage.
+ * @method static bool start() Start the session, reading the data from a handler.
  * @see \Illuminate\Session\Store::start
  *
  * @method static string token() Get the CSRF token value.

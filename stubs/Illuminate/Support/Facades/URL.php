@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -26,11 +26,32 @@ namespace Illuminate\Support\Facades;
  * @method static string current() Get the current URL for the request.
  * @see \Illuminate\Routing\UrlGenerator::current
  *
+ * @method static void defaults(array $defaults) Set the default named parameters used by the URL generator.
+ * @see \Illuminate\Routing\UrlGenerator::defaults
+ *
  * @method static void forceRootUrl(string $root) Set the forced root URL.
  * @see \Illuminate\Routing\UrlGenerator::forceRootUrl
  *
- * @method static void forceSchema(string $schema) Force the schema for URLs.
- * @see \Illuminate\Routing\UrlGenerator::forceSchema
+ * @method static void forceScheme(string $schema) Force the scheme for URLs.
+ * @see \Illuminate\Routing\UrlGenerator::forceScheme
+ *
+ * @method static string format(string $root, string $path) Format the given URL segments into a single URL.
+ * @see \Illuminate\Routing\UrlGenerator::format
+ *
+ * @method static \Illuminate\Routing\UrlGenerator formatHostUsing(\Closure $callback) Set a callback to be used to format the host of generated URLs.
+ * @see \Illuminate\Routing\UrlGenerator::formatHostUsing
+ *
+ * @method static array formatParameters(mixed|array $parameters) Format the array of URL parameters.
+ * @see \Illuminate\Routing\UrlGenerator::formatParameters
+ *
+ * @method static \Illuminate\Routing\UrlGenerator formatPathUsing(\Closure $callback) Set a callback to be used to format the path of generated URLs.
+ * @see \Illuminate\Routing\UrlGenerator::formatPathUsing
+ *
+ * @method static string formatRoot(string $scheme, string $root = null) Get the base URL for the request.
+ * @see \Illuminate\Routing\UrlGenerator::formatRoot
+ *
+ * @method static string formatScheme(bool|null $secure) Get the default scheme for a raw URL.
+ * @see \Illuminate\Routing\UrlGenerator::formatScheme
  *
  * @method static string full() Get the full URL for the current request.
  * @see \Illuminate\Routing\UrlGenerator::full
@@ -40,6 +61,9 @@ namespace Illuminate\Support\Facades;
  *
  * @method static bool isValidUrl(string $path) Determine if the given path is a valid URL.
  * @see \Illuminate\Routing\UrlGenerator::isValidUrl
+ *
+ * @method static \Closure pathFormatter() Get the path formatter being used by the URL generator.
+ * @see \Illuminate\Routing\UrlGenerator::pathFormatter
  *
  * @method static string previous(mixed $fallback = false) Get the URL for the previous request.
  * @see \Illuminate\Routing\UrlGenerator::previous

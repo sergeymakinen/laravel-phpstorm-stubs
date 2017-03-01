@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -32,14 +32,8 @@ namespace Illuminate\Support\Facades;
  * @method static string getCompiledPath(string $path) Get the path to the compiled version of a view.
  * @see \Illuminate\View\Compilers\Compiler::getCompiledPath
  *
- * @method static string getContentTags() Gets the content tags used for the compiler.
- * @see \Illuminate\View\Compilers\BladeCompiler::getContentTags
- *
  * @method static array getCustomDirectives() Get the list of custom directives.
  * @see \Illuminate\View\Compilers\BladeCompiler::getCustomDirectives
- *
- * @method static string getEscapedContentTags() Gets the escaped content tags used for the compiler.
- * @see \Illuminate\View\Compilers\BladeCompiler::getEscapedContentTags
  *
  * @method static array getExtensions() Get the extensions used by the compiler.
  * @see \Illuminate\View\Compilers\BladeCompiler::getExtensions
@@ -47,26 +41,14 @@ namespace Illuminate\Support\Facades;
  * @method static string getPath() Get the path currently being compiled.
  * @see \Illuminate\View\Compilers\BladeCompiler::getPath
  *
- * @method static array getRawTags() Gets the raw tags used by the compiler.
- * @see \Illuminate\View\Compilers\BladeCompiler::getRawTags
- *
  * @method static bool isExpired(string $path) Determine if the view at the given path is expired.
  * @see \Illuminate\View\Compilers\Compiler::isExpired
- *
- * @method static void setContentTags(string $openTag, string $closeTag, bool $escaped = false) Sets the content tags used for the compiler.
- * @see \Illuminate\View\Compilers\BladeCompiler::setContentTags
  *
  * @method static void setEchoFormat(string $format) Set the echo format to be used by the compiler.
  * @see \Illuminate\View\Compilers\BladeCompiler::setEchoFormat
  *
- * @method static void setEscapedContentTags(string $openTag, string $closeTag) Sets the escaped content tags used for the compiler.
- * @see \Illuminate\View\Compilers\BladeCompiler::setEscapedContentTags
- *
  * @method static void setPath(string $path) Set the path currently being compiled.
  * @see \Illuminate\View\Compilers\BladeCompiler::setPath
- *
- * @method static void setRawTags(string $openTag, string $closeTag) Sets the raw tags used for the compiler.
- * @see \Illuminate\View\Compilers\BladeCompiler::setRawTags
  *
  * @method static string stripParentheses(string $expression) Strip the parentheses from the given expression.
  * @see \Illuminate\View\Compilers\BladeCompiler::stripParentheses

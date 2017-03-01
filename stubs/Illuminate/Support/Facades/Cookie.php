@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -29,7 +29,7 @@ namespace Illuminate\Support\Facades;
  * @method static \Symfony\Component\HttpFoundation\Cookie make(string $name, string $value, int $minutes = 0, string $path = null, string $domain = null, bool $secure = false, bool $httpOnly = true) Create a new cookie instance.
  * @see \Illuminate\Cookie\CookieJar::make
  *
- * @method static void queue() Queue a cookie to send with the next response.
+ * @method static void queue(...$parameters) Queue a cookie to send with the next response.
  * @see \Illuminate\Cookie\CookieJar::queue
  *
  * @method static \Symfony\Component\HttpFoundation\Cookie queued(string $key, mixed $default = null) Get a queued cookie instance.

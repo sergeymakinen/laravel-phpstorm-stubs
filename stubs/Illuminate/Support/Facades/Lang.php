@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -29,13 +29,16 @@ namespace Illuminate\Support\Facades;
  * @method static string getFallback() Get the fallback locale being used.
  * @see \Illuminate\Translation\Translator::getFallback
  *
+ * @method static string getFromJson(string $key, array $replace = [], string $locale = null) Get the translation for a given key from the JSON translation files.
+ * @see \Illuminate\Translation\Translator::getFromJson
+ *
  * @method static \Illuminate\Translation\LoaderInterface getLoader() Get the language line loader implementation.
  * @see \Illuminate\Translation\Translator::getLoader
  *
  * @method static string getLocale() Get the default locale being used.
  * @see \Illuminate\Translation\Translator::getLocale
  *
- * @method static \Symfony\Component\Translation\MessageSelector getSelector() Get the message selector instance.
+ * @method static \Illuminate\Translation\MessageSelector getSelector() Get the message selector instance.
  * @see \Illuminate\Translation\Translator::getSelector
  *
  * @method static bool has(string $key, string|null $locale = null, bool $fallback = true) Determine if a translation exists.
@@ -62,13 +65,13 @@ namespace Illuminate\Support\Facades;
  * @method static void setParsedKey(string $key, array $parsed) Set the parsed value of a key.
  * @see \Illuminate\Support\NamespacedItemResolver::setParsedKey
  *
- * @method static void setSelector(\Symfony\Component\Translation\MessageSelector $selector) Set the message selector instance.
+ * @method static void setSelector(\Illuminate\Translation\MessageSelector $selector) Set the message selector instance.
  * @see \Illuminate\Translation\Translator::setSelector
  *
- * @method static string|array|null trans(string $id, array $parameters = [], string $domain = 'messages', string $locale = null) Get the translation for a given key.
+ * @method static string|array|null trans(string $key, array $replace = [], string $locale = null) Get the translation for a given key.
  * @see \Illuminate\Translation\Translator::trans
  *
- * @method static string transChoice(string $id, int|array|\Countable $number, array $parameters = [], string $domain = 'messages', string $locale = null) Get a translation according to an integer value.
+ * @method static string transChoice(string $key, int|array|\Countable $number, array $replace = [], string $locale = null) Get a translation according to an integer value.
  * @see \Illuminate\Translation\Translator::transChoice
  *
  */

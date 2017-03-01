@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -78,15 +78,6 @@
  * @method static \Illuminate\Contracts\Events\Dispatcher getEventDispatcher() Get the event dispatcher used by the connection.
  * @see \Illuminate\Database\Connection::getEventDispatcher
  *
- * @method static mixed getFetchArgument() Get the fetch argument to be applied when selecting.
- * @see \Illuminate\Database\Connection::getFetchArgument
- *
- * @method static array getFetchConstructorArgument() Get custom constructor arguments for the PDO::FETCH_CLASS fetch mode.
- * @see \Illuminate\Database\Connection::getFetchConstructorArgument
- *
- * @method static int getFetchMode() Get the default fetch mode for the connection.
- * @see \Illuminate\Database\Connection::getFetchMode
- *
  * @method static string|null getName() Get the database connection name.
  * @see \Illuminate\Database\Connection::getName
  *
@@ -150,7 +141,7 @@
  * @method static void reconnect() Reconnect to the database.
  * @see \Illuminate\Database\Connection::reconnect
  *
- * @method static void rollBack() Rollback the active database transaction.
+ * @method static void rollBack(int|null $toLevel = null) Rollback the active database transaction.
  * @see \Illuminate\Database\Connection::rollBack
  *
  * @method static array select(string $query, array $bindings = [], bool $useReadPdo = true) Run a select statement against the database.
@@ -159,7 +150,7 @@
  * @method static array selectFromWriteConnection(string $query, array $bindings = []) Run a select statement against the database.
  * @see \Illuminate\Database\Connection::selectFromWriteConnection
  *
- * @method static mixed selectOne(string $query, array $bindings = []) Run a select statement and return a single result.
+ * @method static mixed selectOne(string $query, array $bindings = [], bool $useReadPdo = true) Run a select statement and return a single result.
  * @see \Illuminate\Database\Connection::selectOne
  *
  * @method static string setDatabaseName(string $database) Set the name of the connected database.
@@ -170,9 +161,6 @@
  *
  * @method static void setEventDispatcher(\Illuminate\Contracts\Events\Dispatcher $events) Set the event dispatcher instance on the connection.
  * @see \Illuminate\Database\Connection::setEventDispatcher
- *
- * @method static int setFetchMode(int $fetchMode, mixed $fetchArgument = null, array $fetchConstructorArgument = []) Set the default fetch mode for the connection, and optional arguments for the given fetch mode.
- * @see \Illuminate\Database\Connection::setFetchMode
  *
  * @method static \Illuminate\Database\Connection setPdo(\PDO|null $pdo) Set the PDO connection.
  * @see \Illuminate\Database\Connection::setPdo

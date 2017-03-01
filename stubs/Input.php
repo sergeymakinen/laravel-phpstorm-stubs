@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -39,7 +39,7 @@
  * @method static string decodedPath() Get the current encoded path info for the request.
  * @see \Illuminate\Http\Request::decodedPath
  *
- * @method static \Symfony\Component\HttpFoundation\Request duplicate(array $query = null, array $request = null, array $attributes = null, array $cookies = null, array $files = null, array $server = null) Clones a request and overrides some of its parameters.
+ * @method static static duplicate(array $query = null, array $request = null, array $attributes = null, array $cookies = null, array $files = null, array $server = null) Clones a request and overrides some of its parameters.
  * @see \Illuminate\Http\Request::duplicate
  *
  * @method static array except(array|mixed $keys) Get all of the input except for a specified array of items.
@@ -57,7 +57,7 @@
  * @method static string fingerprint() Get a unique fingerprint for the request / route / IP address.
  * @see \Illuminate\Http\Request::fingerprint
  *
- * @method static void flash(string $filter = null, array $keys = []) Flash the input for the current request to the session.
+ * @method static void flash() Flash the input for the current request to the session.
  * @see \Illuminate\Http\Request::flash
  *
  * @method static void flashExcept(array|mixed $keys) Flash only some of the input to the session.
@@ -249,7 +249,10 @@
  * @method static bool isMethodCacheable() Checks whether the method is cacheable or not.
  * @see \Symfony\Component\HttpFoundation\Request::isMethodCacheable
  *
- * @method static bool isMethodSafe() Checks whether the method is safe or not.
+ * @method static bool isMethodIdempotent() Checks whether or not the method is idempotent.
+ * @see \Symfony\Component\HttpFoundation\Request::isMethodIdempotent
+ *
+ * @method static bool isMethodSafe() Checks whether or not the method is safe.
  * @see \Symfony\Component\HttpFoundation\Request::isMethodSafe
  *
  * @method static bool isNoCache()
@@ -320,6 +323,12 @@
  *
  * @method static void setFormat(string $format, string|array $mimeTypes) Associates a format with mime types.
  * @see \Symfony\Component\HttpFoundation\Request::setFormat
+ *
+ * @method static \Illuminate\Http\Request setJson(array $json) Set the JSON payload for the request.
+ * @see \Illuminate\Http\Request::setJson
+ *
+ * @method static void setLaravelSession(\Illuminate\Contracts\Session\Session $session) Set the session instance on the request.
+ * @see \Illuminate\Http\Request::setLaravelSession
  *
  * @method static void setLocale(string $locale) Sets the locale.
  * @see \Symfony\Component\HttpFoundation\Request::setLocale

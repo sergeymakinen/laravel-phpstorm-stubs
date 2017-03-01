@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -15,7 +15,7 @@
  * @method static string createToken(\Illuminate\Contracts\Auth\CanResetPassword $user) Create a new password reset token for the given user.
  * @see \Illuminate\Auth\Passwords\PasswordBroker::createToken
  *
- * @method static void deleteToken(string $token) Delete the given password reset token.
+ * @method static void deleteToken(\Illuminate\Contracts\Auth\CanResetPassword $user) Delete password reset tokens of the given user.
  * @see \Illuminate\Auth\Passwords\PasswordBroker::deleteToken
  *
  * @method static \Illuminate\Auth\Passwords\TokenRepositoryInterface getRepository() Get the password reset token repository implementation.

@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -44,8 +44,17 @@ namespace Illuminate\Database\Eloquent;
  * @method static bool chunkById(int $count, callable $callback, string $column = 'id', string $alias = null) Chunk the results of a query by comparing numeric IDs.
  * @see \Illuminate\Database\Query\Builder::chunkById
  *
+ * @method static \Illuminate\Database\Eloquent\Builder cloneWithout(array $except) Clone the query without the given properties.
+ * @see \Illuminate\Database\Query\Builder::cloneWithout
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder cloneWithoutBindings(array $except) Clone the query without the given bindings.
+ * @see \Illuminate\Database\Query\Builder::cloneWithoutBindings
+ *
  * @method static int count(string $columns = '*') Retrieve the "count" result of the query.
  * @see \Illuminate\Database\Query\Builder::count
+ *
+ * @method static \Illuminate\Database\Eloquent\Model create(array $attributes = []) Save a new model and return the instance.
+ * @see \Illuminate\Database\Eloquent\Builder::create
  *
  * @method static \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder crossJoin(string $table, string $first = null, string $operator = null, string $second = null) Add a "cross join" clause to the query.
  * @see \Illuminate\Database\Query\Builder::crossJoin
@@ -92,13 +101,16 @@ namespace Illuminate\Database\Eloquent;
  * @method static \stdClass|array|null first(array $columns = ['*']) Execute the query and get the first result.
  * @see \Illuminate\Database\Query\Builder::first
  *
+ * @method static \Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Model|mixed firstOr(\Closure|array $columns = ['*'], \Closure|null $callback = null) Execute the query and get the first result or call a callback.
+ * @see \Illuminate\Database\Eloquent\Builder::firstOr
+ *
  * @method static \Illuminate\Database\Eloquent\Model firstOrCreate(array $attributes, array $values = []) Get the first record matching the attributes or create it.
  * @see \Illuminate\Database\Eloquent\Builder::firstOrCreate
  *
  * @method static \Illuminate\Database\Eloquent\Model|\Illuminate\Database\Eloquent\Model firstOrFail(array $columns = ['*']) Execute the query and get the first result or throw an exception.
  * @see \Illuminate\Database\Eloquent\Builder::firstOrFail
  *
- * @method static \Illuminate\Database\Eloquent\Model firstOrNew(array $attributes) Get the first record matching the attributes or instantiate it.
+ * @method static \Illuminate\Database\Eloquent\Model firstOrNew(array $attributes, array $values = []) Get the first record matching the attributes or instantiate it.
  * @see \Illuminate\Database\Eloquent\Builder::firstOrNew
  *
  * @method static \Illuminate\Database\Query\Builder forNestedWhere() Create a new query instance for nested where condition.
@@ -110,11 +122,17 @@ namespace Illuminate\Database\Eloquent;
  * @method static \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder forPageAfterId(int $perPage = 15, int $lastId = 0, string $column = 'id') Constrain the query to the next "page" of results after a given ID.
  * @see \Illuminate\Database\Query\Builder::forPageAfterId
  *
+ * @method static \Illuminate\Database\Eloquent\Model forceCreate(array $attributes) Save a new model and return the instance.
+ * @see \Illuminate\Database\Eloquent\Builder::forceCreate
+ *
  * @method static mixed forceDelete() Run the default delete function on the builder.
  * @see \Illuminate\Database\Eloquent\Builder::forceDelete
  *
  * @method static \Illuminate\Database\Query\Builder from(string $table) Set the table which the query is targeting.
  * @see \Illuminate\Database\Query\Builder::from
+ *
+ * @method static \Illuminate\Database\Eloquent\Collection fromQuery(string $query, array $bindings = []) Create a collection of models from a raw query.
+ * @see \Illuminate\Database\Eloquent\Builder::fromQuery
  *
  * @method static \Illuminate\Support\Collection get(array $columns = ['*']) Execute the query as a "select" statement.
  * @see \Illuminate\Database\Query\Builder::get
@@ -167,6 +185,9 @@ namespace Illuminate\Database\Eloquent;
  * @method static \Illuminate\Database\Query\Builder havingRaw(string $sql, array $bindings = [], string $boolean = 'and') Add a raw having clause to the query.
  * @see \Illuminate\Database\Query\Builder::havingRaw
  *
+ * @method static \Illuminate\Database\Eloquent\Collection hydrate(array $items) Create a collection of models from plain arrays.
+ * @see \Illuminate\Database\Eloquent\Builder::hydrate
+ *
  * @method static string implode(string $column, string $glue = '') Concatenate values of a given column as a string.
  * @see \Illuminate\Database\Query\Builder::implode
  *
@@ -182,10 +203,10 @@ namespace Illuminate\Database\Eloquent;
  * @method static int insertGetId(array $values, string $sequence = null) Insert a new record and get the value of the primary key.
  * @see \Illuminate\Database\Query\Builder::insertGetId
  *
- * @method static \Illuminate\Database\Query\Builder join(string $table, string $one, string $operator = null, string $two = null, string $type = 'inner', bool $where = false) Add a join clause to the query.
+ * @method static \Illuminate\Database\Query\Builder join(string $table, string $first, string $operator = null, string $second = null, string $type = 'inner', bool $where = false) Add a join clause to the query.
  * @see \Illuminate\Database\Query\Builder::join
  *
- * @method static \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder joinWhere(string $table, string $one, string $operator, string $two, string $type = 'inner') Add a "join where" clause to the query.
+ * @method static \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder joinWhere(string $table, string $first, string $operator, string $second, string $type = 'inner') Add a "join where" clause to the query.
  * @see \Illuminate\Database\Query\Builder::joinWhere
  *
  * @method static \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder latest(string $column = 'created_at') Add an "order by" clause for a timestamp to the query.
@@ -194,20 +215,17 @@ namespace Illuminate\Database\Eloquent;
  * @method static \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder leftJoin(string $table, string $first, string $operator = null, string $second = null) Add a left join to the query.
  * @see \Illuminate\Database\Query\Builder::leftJoin
  *
- * @method static \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder leftJoinWhere(string $table, string $one, string $operator, string $two) Add a "join where" clause to the query.
+ * @method static \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder leftJoinWhere(string $table, string $first, string $operator, string $second) Add a "join where" clause to the query.
  * @see \Illuminate\Database\Query\Builder::leftJoinWhere
  *
  * @method static \Illuminate\Database\Query\Builder limit(int $value) Set the "limit" value of the query.
  * @see \Illuminate\Database\Query\Builder::limit
  *
- * @method static \Illuminate\Database\Query\Builder lock(bool $value = true) Lock the selected rows in the table.
+ * @method static \Illuminate\Database\Query\Builder lock(string|bool $value = true) Lock the selected rows in the table.
  * @see \Illuminate\Database\Query\Builder::lock
  *
  * @method static \Illuminate\Database\Query\Builder lockForUpdate() Lock the selected rows in the table for updating.
  * @see \Illuminate\Database\Query\Builder::lockForUpdate
- *
- * @method static void macro(string $name, \Closure $callback) Extend the builder with a given callback.
- * @see \Illuminate\Database\Eloquent\Builder::macro
  *
  * @method static mixed macroCall(string $method, array $parameters) Dynamically handle calls to the class.
  * @see \Illuminate\Database\Query\Builder::macroCall
@@ -218,8 +236,8 @@ namespace Illuminate\Database\Eloquent;
  * @method static \Illuminate\Database\Query\Builder mergeBindings(\Illuminate\Database\Query\Builder $query) Merge an array of bindings into our bindings.
  * @see \Illuminate\Database\Query\Builder::mergeBindings
  *
- * @method static \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Model mergeModelDefinedRelationConstraints(\Illuminate\Database\Eloquent\Builder $relation) Merge the constraints from a relation query to the current query.
- * @see \Illuminate\Database\Eloquent\Builder::mergeModelDefinedRelationConstraints
+ * @method static \Illuminate\Database\Eloquent\Builder|\Illuminate\Database\Eloquent\Model mergeConstraintsFrom(\Illuminate\Database\Eloquent\Builder $from) Merge the where constraints from another query to the current query.
+ * @see \Illuminate\Database\Eloquent\Builder::mergeConstraintsFrom
  *
  * @method static void mergeWheres(array $wheres, array $bindings) Merge an array of where clauses and bindings.
  * @see \Illuminate\Database\Query\Builder::mergeWheres
@@ -314,10 +332,10 @@ namespace Illuminate\Database\Eloquent;
  * @method static \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder rightJoin(string $table, string $first, string $operator = null, string $second = null) Add a right join to the query.
  * @see \Illuminate\Database\Query\Builder::rightJoin
  *
- * @method static \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder rightJoinWhere(string $table, string $one, string $operator, string $two) Add a "right join where" clause to the query.
+ * @method static \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder rightJoinWhere(string $table, string $first, string $operator, string $second) Add a "right join where" clause to the query.
  * @see \Illuminate\Database\Query\Builder::rightJoinWhere
  *
- * @method static mixed scopes(array $scopes) Add the given scopes to the current builder instance.
+ * @method static mixed scopes(array $scopes) Call the given local model scopes.
  * @see \Illuminate\Database\Eloquent\Builder::scopes
  *
  * @method static \Illuminate\Database\Query\Builder select(array|mixed $columns = ['*']) Set the columns to be selected.
@@ -415,6 +433,9 @@ namespace Illuminate\Database\Eloquent;
  *
  * @method static \Illuminate\Database\Query\Builder whereIn(string $column, mixed $values, string $boolean = 'and', bool $not = false) Add a "where in" clause to the query.
  * @see \Illuminate\Database\Query\Builder::whereIn
+ *
+ * @method static \Illuminate\Database\Eloquent\Builder whereKey(mixed $id) Add a where clause on the primary key to the query.
+ * @see \Illuminate\Database\Eloquent\Builder::whereKey
  *
  * @method static \Illuminate\Database\Query\Builder|\Illuminate\Database\Eloquent\Builder whereMonth(string $column, string $operator, mixed $value = null, string $boolean = 'and') Add a "where month" statement to the query.
  * @see \Illuminate\Database\Query\Builder::whereMonth

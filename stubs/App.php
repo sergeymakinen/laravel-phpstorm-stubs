@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -45,6 +45,9 @@
  * @method static void bindIf(string $abstract, \Closure|string|null $concrete = null, bool $shared = false) Register a binding if it hasn't already been registered.
  * @see \Illuminate\Container\Container::bindIf
  *
+ * @method static void bindMethod(string $method, \Closure $callback) Bind a callback to resolve with Container::call.
+ * @see \Illuminate\Container\Container::bindMethod
+ *
  * @method static void boot() Boot the application's service providers.
  * @see \Illuminate\Foundation\Application::boot
  *
@@ -63,11 +66,14 @@
  * @method static bool bound(string $abstract) Determine if the given abstract type has been bound.
  * @see \Illuminate\Foundation\Application::bound
  *
- * @method static mixed build(string $concrete, array $parameters = []) Instantiate a concrete instance of the given type.
+ * @method static mixed build(string $concrete) Instantiate a concrete instance of the given type.
  * @see \Illuminate\Container\Container::build
  *
  * @method static mixed call(callable|string $callback, array $parameters = [], string|null $defaultMethod = null) Call the given Closure / class@method and inject its dependencies.
  * @see \Illuminate\Container\Container::call
+ *
+ * @method static mixed callMethodBinding(string $method, mixed $instance) Get the method binding for the given method.
+ * @see \Illuminate\Container\Container::callMethodBinding
  *
  * @method static string configPath() Get the path to the application configuration files.
  * @see \Illuminate\Foundation\Application::configPath
@@ -99,7 +105,7 @@
  * @method static void extend(string $abstract, \Closure $closure) "Extend" an abstract type in the container.
  * @see \Illuminate\Container\Container::extend
  *
- * @method static \Closure factory(string $abstract, array $defaults = []) Get a closure to resolve the given type from the container.
+ * @method static \Closure factory(string $abstract) Get a closure to resolve the given type from the container.
  * @see \Illuminate\Container\Container::factory
  *
  * @method static void flush() Flush the container of all bindings and resolved instances.
@@ -116,9 +122,6 @@
  *
  * @method static array getBindings() Get the container's bindings.
  * @see \Illuminate\Container\Container::getBindings
- *
- * @method static string getCachedCompilePath() Get the path to the cached "compiled.php" file.
- * @see \Illuminate\Foundation\Application::getCachedCompilePath
  *
  * @method static string getCachedConfigPath() Get the path to the configuration cache file.
  * @see \Illuminate\Foundation\Application::getCachedConfigPath
@@ -152,6 +155,9 @@
  *
  * @method static bool hasBeenBootstrapped() Determine if the application has been bootstrapped before.
  * @see \Illuminate\Foundation\Application::hasBeenBootstrapped
+ *
+ * @method static bool hasMethodBinding(string $method) Determine if the container has a method binding.
+ * @see \Illuminate\Container\Container::hasMethodBinding
  *
  * @method static bool hasMonologConfigurator() Determine if the application has a custom Monolog configurator.
  * @see \Illuminate\Foundation\Application::hasMonologConfigurator
@@ -192,11 +198,14 @@
  * @method static \Illuminate\Foundation\Application loadEnvironmentFrom(string $file) Set the environment file to be loaded during bootstrapping.
  * @see \Illuminate\Foundation\Application::loadEnvironmentFrom
  *
- * @method static mixed make(string $abstract, array $parameters = []) Resolve the given type from the container.
+ * @method static mixed make(string $abstract) Resolve the given type from the container.
  * @see \Illuminate\Foundation\Application::make
  *
  * @method static string path() Get the path to the application "app" directory.
  * @see \Illuminate\Foundation\Application::path
+ *
+ * @method static void provideFacades(string $namespace) Configure the real-time facade namespace.
+ * @see \Illuminate\Foundation\Application::provideFacades
  *
  * @method static string publicPath() Get the path to the public / web directory.
  * @see \Illuminate\Foundation\Application::publicPath
@@ -219,8 +228,8 @@
  * @method static void registerDeferredProvider(string $provider, string $service = null) Register a deferred provider and service.
  * @see \Illuminate\Foundation\Application::registerDeferredProvider
  *
- * @method static \Illuminate\Support\ServiceProvider resolveProviderClass(string $provider) Resolve a service provider instance from the class name.
- * @see \Illuminate\Foundation\Application::resolveProviderClass
+ * @method static \Illuminate\Support\ServiceProvider resolveProvider(string $provider) Resolve a service provider instance from the class name.
+ * @see \Illuminate\Foundation\Application::resolveProvider
  *
  * @method static bool resolved(string $abstract) Determine if the given abstract type has been resolved.
  * @see \Illuminate\Container\Container::resolved
@@ -248,9 +257,6 @@
  *
  * @method static void setLocale(string $locale) Set the current application locale.
  * @see \Illuminate\Foundation\Application::setLocale
- *
- * @method static \Closure share(\Closure $closure) Wrap a Closure such that it is shared.
- * @see \Illuminate\Container\Container::share
  *
  * @method static bool shouldSkipMiddleware() Determine if middleware has been disabled for the application.
  * @see \Illuminate\Foundation\Application::shouldSkipMiddleware

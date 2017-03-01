@@ -1,18 +1,18 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
 /**
  * Auth stub.
  *
- * @method static bool attempt(array $credentials = [], bool $remember = false, bool $login = true) Attempt to authenticate a user using the given credentials.
+ * @method static bool attempt(array $credentials = [], bool $remember = false) Attempt to authenticate a user using the given credentials.
  * @see \Illuminate\Contracts\Auth\StatefulGuard::attempt
  *
  * @method static bool check() Determine if the current user is authenticated.

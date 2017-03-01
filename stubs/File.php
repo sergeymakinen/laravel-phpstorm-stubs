@@ -1,11 +1,11 @@
 <?php
 /**
- * Laravel PhpStorm autocomplete stubs.
+ * Laravel PhpStorm autocomplete stubs
  *
- * Generated on Laravel 5.3.24.
+ * Generated on Laravel 5.4.13
  *
  * @see       https://github.com/sergeymakinen/laravel-phpstorm-stubs
- * @copyright Copyright (c) 2016 Sergey Makinen (https://makinen.ru)
+ * @copyright Copyright (c) 2016-2017 Sergey Makinen (https://makinen.ru)
  * @license   https://github.com/sergeymakinen/laravel-phpstorm-stubs/blob/master/LICENSE The MIT License
  */
 
@@ -20,6 +20,9 @@
  *
  * @method static string basename(string $path) Extract the trailing name component from a file path.
  * @see \Illuminate\Filesystem\Filesystem::basename
+ *
+ * @method static mixed chmod(string $path, int $mode = null) Get or set UNIX mode of a file or directory.
+ * @see \Illuminate\Filesystem\Filesystem::chmod
  *
  * @method static bool cleanDirectory(string $directory) Empty the specified directory of all files and folders.
  * @see \Illuminate\Filesystem\Filesystem::cleanDirectory
