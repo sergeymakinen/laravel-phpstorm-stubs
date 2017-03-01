@@ -10,13 +10,13 @@ The preferred way to install this extension is through [composer](https://getcom
 
 Either run
 
-```
-php composer.phar require sergeymakinen/laravel-phpstorm-stubs "^1.0"
+```bash
+composer require "sergeymakinen/laravel-phpstorm-stubs:^1.0"
 ```
 
 or add
 
-```
+```json
 "sergeymakinen/laravel-phpstorm-stubs": "^1.0"
 ```
 
@@ -27,8 +27,6 @@ to the require section of your `composer.json` file.
 If you got no code completion on Eloquent models, add a Model mixin tag, see an example:
 
 ```php
-<?php 
-
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
